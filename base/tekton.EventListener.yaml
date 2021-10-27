@@ -52,7 +52,7 @@ spec:
                   storage: 1Gi
               accessModes:
               - ReadWriteOnce
-        - name: mycredentials
+        - name: git-credentials
           secret:
             secretName: mycredentials-github
 ---
