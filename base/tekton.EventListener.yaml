@@ -27,7 +27,7 @@ spec:
           - name: app-name
             value: cayo-next
           - name: source-repo
-            value: https://github.com/cloud-native-garage-method-cohort/cayo-next
+            value: github.com/cloud-native-garage-method-cohort/cayo-next
           - name: image-repo
             value: quay.io/cayops/cayo-next
           - name: app-namespace
