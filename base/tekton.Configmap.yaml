@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: production-repository
+  namespace: cayo-next-pipeline
+data:
+  branch: main
+  host: github.com
+  org: cloud-native-garage-method-cohort
+  repo: cayo-next-production

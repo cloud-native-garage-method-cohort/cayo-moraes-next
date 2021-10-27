@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cayo-next
+  labels:
+    app: cayo-next
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cayo-next
+  template:
+    metadata:
+      labels:
+        app: cayo-next
+    spec:
+      containers:
+      - name: nextjs
+        image: quay.io/cayops/cayo-next:1
+        ports:
+        - containerPort: 3000
